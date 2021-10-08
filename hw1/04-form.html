@@ -1,15 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Form Exercise</title>
-    <link rel="stylesheet" href="../styles.css" />
-    <link rel="stylesheet" href="04-form.css" />
-  </head>
-  <body>
-    <!-- 04 - Form Exercise -->
-    <!-- Add your code below -->
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Form Exercise</title>
+  <link rel="stylesheet" href="../styles.css" />
+  <link rel="stylesheet" href="04-form.css" />
+</head>
+<body>
+<!-- 04 - Form Exercise -->
+<form action="">
+  <label for="name">Name(required)</label>
+  <br>
+  <input type="text" id="name" name="name"/><br>
+  <label for="email">Email(required)</label><br>
+  <input type="text" id="email" name="email"/><br>
+  <label for="Registration Status">Registration Status:</label> <br>
+  <select name="Registration select" id="Registration">
+    <option value="">Choose an option</option>
+    <option value="Incomplete">Not Started</option>
+    <option value="Complete">Complete</option>
+  </select><br>
+  <label for="Class-Section">Class Section:</label><br>
+  <input type="checkbox" id="cs_410P" name="cs410P">
+  <label for="CS-410P"> CS 410P</label>
+  <input type="checkbox" id="cs510P" name="cs510P"/>
+  <label for="CS-510P"> CS 510</label><br>
+  <label for="Course-Selector">Have you taken any of the following courses?</label><br>
+  <input type="checkbox" id="programming_language" name="programming_language"/>
+  <label for="Programming language">Programing Languages</label><br>
+  <input type="checkbox" id="operating_system" name="operating_system"/>
+  <label for="Operating Systems">Operating Systems</label><br>
+  <input type="checkbox" id="Full_stack" name="Full_stack"/>
+  <label for="Full Stack">Full Stack Web Development</label><br>
+  <label for="Anything else">Anything else?</label>
+  <textarea id="anything_area" name="anything_area" rows="4" cols="50"></textarea><br>
+  <input type="Submit" name="Submit" value="Submit"/>
+  <input type="Reset" name="Reset" value="Reset"/>
+
+
+</form>
+<!-- Add your code below -->
+</body>
 </html>
