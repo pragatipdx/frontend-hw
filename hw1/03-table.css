@@ -4,3 +4,33 @@
 */
 
 /* Add your code here */
+table{
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+th, td { padding: 10px 20px; }
+
+.heading {
+    background-color: var(--teal);
+    color: var(--white);
+    text-align: center;
+    /* padding:20px;  */
+
+}
+
+.author, .count, .year
+{
+    text-align: center;
+}
+
+
+tr:hover {
+    background-color: rgba(0, 128, 128, 0.1);
+}
+
+tr{
+    box-shadow: 0px 0px 0px 0.2px rgb(80, 80, 80);
+}
+
