@@ -1,15 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Form Exercise</title>
-    <link rel="stylesheet" href="../styles.css" />
-    <link rel="stylesheet" href="04-form.css" />
-  </head>
-  <body>
-    <!-- 04 - Form Exercise -->
-    <!-- Add your code below -->
-  </body>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<title>Form Exercise</title>
+<link rel="stylesheet" href="../styles.css" />
+<link rel="stylesheet" href="04-form.css" />
+<body>
+<!-- 04 - Form Exercise -->
+<div class="container">
+  <form class="survey">
+    <h1 class="heading">INTRO SURVEY</h1>
+    <!-- Name field -->
+    <div class="body">
+      <label for="name">Name (required)</label>
+      <!-- <p class="instruction">required</p> -->
+      <br>
+      <input
+              type="text"
+              id="input"
+              name="name" required/>
+    </div>
+    <!-- Email field -->
+    <div class="body">
+      <label for="email">Email (required)</label>
+      <!-- <p class="instruction">required</p> -->
+      <br>
+      <input
+              type="text"
+              id="input"
+              name="email" required/>
+    </div>
+    <!-- Registration field -->
+    <div class="body">
+      <label for="Registration Status">Registration Status:</label>
+      <br>
+      <select name="Registration select" id="registration">
+        <option value="">Choose an Option</option>
+        <option value="Waitlist"> Waitlist</option>
+      </select>
+    </div>
+    <!-- Class Section field -->
+    <div class="body">
+      <label for="Class-Section">Class Section:</label>
+      <br>
+      <input type="radio" id="CS410P" name="cs410P" />
+      <label for="CS-410P">CS 410P </label>
+
+      <input type="radio" id="CS510P" name="cs510P" />
+      <label for="CS-510P">CS 510</label>
+    </div>
+    <!-- Course-Selector field -->
+    <div class="body">
+      <label for="Course-Selector">Have you taken any of the following courses?</label>
+      <br>
+      <input type="checkbox"
+             id="programming_language"
+             name="Selector" />
+      <label for="Programming language">Programing Languages</label>
+      <br>
+      <input type="checkbox"
+             id="operating_system"
+             name="operating_system" />
+      <label for="Operating Systems">Operating Systems</label>
+      <br>
+
+      <input type="checkbox"
+             id="Full_stack"
+             name="Full_stack" />
+      <label for="Full Stack">Full Stack Web Development</label>
+
+    </div>
+
+    <!-- Anything else field -->
+    <div class="body">
+      <label for="Anything else">Anything else?</label>
+      <textarea id="input"
+                name="anything_area"
+                rows="4"
+                cols="50">
+</textarea>
+    </div>
+
+    <!-- Submit -->
+    <div class="footer">
+      <input type="Submit" class="submit" id="button1"  value="Submit" />
+      <!-- Reset -->
+      <input type="Reset" id="button2" value="Reset" />
+    </div>
+  </form>
+</div>
+</body>
 </html>
