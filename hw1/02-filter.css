@@ -1,33 +1,45 @@
-/* Add your code here */
+figure {
 
-.Grayscale{
+    float: left;
+    padding:0px;
+}
 
+img{
+    max-height: 200px;
+    width: 200px;
+}
+
+.Box2
+{
     filter:grayscale(1);
 }
-.Blur{
+.Box3
+{
     filter:Blur(2px);
 }
-.Brightness
+.Box4
+{
+    filter:invert(80%);
+}
+.Box5
 {
     filter:brightness(50%);
 }
-.Saturation
+.Box6
 {
     filter: saturate(4);
 }
 
-.Sepia
+.Box7
 {
     filter:sepia(1);
 }
-.Invert
-{
-    filter:invert(80%);
-}
-.Various
-{
-    filter:hue-rotate(90deg)
-}
 
+.Box8
+{
+    filter:invert(80%) brightness(50%) saturate(4);
+
+
+}
 
 
