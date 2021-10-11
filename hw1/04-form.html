@@ -6,89 +6,91 @@
 <title>Form Exercise</title>
 <link rel="stylesheet" href="../styles.css" />
 <link rel="stylesheet" href="04-form.css" />
+<head>
 <body>
-<!-- 04 - Form Exercise -->
-<div class="container">
-  <form class="survey">
-    <h1 class="heading">INTRO SURVEY</h1>
-    <!-- Name field -->
-    <div class="body">
-      <label for="name">Name (required)</label>
-      <!-- <p class="instruction">required</p> -->
-      <br>
-      <input
-              type="text"
-              id="input"
-              name="name" required/>
-    </div>
-    <!-- Email field -->
-    <div class="body">
-      <label for="email">Email (required)</label>
-      <!-- <p class="instruction">required</p> -->
-      <br>
-      <input
-              type="text"
-              id="input"
-              name="email" required/>
-    </div>
-    <!-- Registration field -->
-    <div class="body">
-      <label for="Registration Status">Registration Status:</label>
-      <br>
-      <select name="Registration select" id="registration">
-        <option value="">Choose an Option</option>
-        <option value="Waitlist"> Waitlist</option>
-      </select>
-    </div>
-    <!-- Class Section field -->
-    <div class="body">
-      <label for="Class-Section">Class Section:</label>
-      <br>
-      <input type="radio" id="CS410P" name="cs410P" />
-      <label for="CS-410P">CS 410P </label>
+<main>
+  <!-- 04 - Form Exercise -->
+  <div class="container">
+    <form class="survey">
+      <h1 class="heading">INTRO SURVEY</h1>
+      <!-- Name field -->
+      <div class="body">
+        <label for="name">Name <span>(required)</span></label>
+        <br>
+        <input
+                type="text"
+                id="name"
+                name="name" required />
+      </div>
+      <!-- Email field -->
+      <div class="body">
+        <label for="email">Email <span>(required)</span></label>
+        <br>
+        <input
+                type="text"
+                id="email"
+                name="email" required />
+      </div>
+      <!-- Registration field -->
+      <div class="body">
+        <label for="registration">Registration Status:</label>
+        <br>
+        <select name="registration" id="registration">
+          <option value="">Choose an Option</option>
+          <option value="Waitlist"> Waitlist</option>
+        </select>
+      </div>
+      <!-- Class Section field -->
+      <div class="body">
+        <fieldset>
+          <legend>Class Section:</legend>
+          <input type="radio" id="CS-410P" name="CS-410P"/>
+          <label for="CS-410P">CS 410P </label>
 
-      <input type="radio" id="CS510P" name="cs510P" />
-      <label for="CS-510P">CS 510</label>
-    </div>
-    <!-- Course-Selector field -->
-    <div class="body">
-      <label for="Course-Selector">Have you taken any of the following courses?</label>
-      <br>
-      <input type="checkbox"
-             id="programming_language"
-             name="Selector" />
-      <label for="Programming language">Programing Languages</label>
-      <br>
-      <input type="checkbox"
-             id="operating_system"
-             name="operating_system" />
-      <label for="Operating Systems">Operating Systems</label>
-      <br>
+          <input type="radio" id="CS-510P" name="cs510P"/>
+          <label for="CS-510P">CS 510 </label>
+        </fieldset>
+      </div>
+      <!-- Course-Selector field -->
+      <div class="body">
+        <fieldset>
+          <legend>Have you taken any of the following courses? </legend>
+          <input type="checkbox"
+                 id="PL"
+                 name="Selector" />
+          <label for="PL">Programing Languages</label>
+          <br>
+          <input type="checkbox"
+                 id="OS"
+                 name="operating_system" />
+          <label for="OS">Operating Systems</label>
+          <br>
+          <input type="checkbox"
+                 id="Full Stack"
+                 name="Full_stack" />
+          <label for="Full Stack">Full Stack Web Development</label>
+        </fieldset>
+      </div>
 
-      <input type="checkbox"
-             id="Full_stack"
-             name="Full_stack" />
-      <label for="Full Stack">Full Stack Web Development</label>
-
-    </div>
-
-    <!-- Anything else field -->
-    <div class="body">
-      <label for="Anything else">Anything else?</label>
-      <textarea id="input"
-                name="anything_area"
-                rows="4"
-                cols="50">
+      <!-- Anything else field -->
+      <div class="body">
+        <label for="Anything else">Anything else?</label>
+        <textarea id="Anything else"
+                  name="anything_area"
+                  rows="4"
+                  cols="50">
 </textarea>
-    </div>
+      </div>
 
-    <!-- Submit -->
-    <div class="footer">
-      <input type="Submit" class="submit" id="button1"  value="Submit" />
-      <!-- Reset -->
-      <input type="Reset" id="button2" value="Reset" />
-    </div>
-  </form>
-</div>
+      <!-- Submit -->
+      <div class="footer">
+        <input type="Submit" class="submit" id="Submit"  value="Submit" />
+        <!-- Reset -->
+        <input type="Reset" id="Reset" value="Reset" />
+      </div>
+    </form>
+  </div>
+</main>
 </body>
+</head>
 </html>
