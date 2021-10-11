@@ -1,1 +1,33 @@
 /* Add your code here */
+
+.Grayscale{
+
+    filter:grayscale(1);
+}
+.Blur{
+    filter:Blur(2px);
+}
+.Brightness
+{
+    filter:brightness(50%);
+}
+.Saturation
+{
+    filter: saturate(4);
+}
+
+.Sepia
+{
+    filter:sepia(1);
+}
+.Invert
+{
+    filter:invert(80%);
+}
+.Various
+{
+    filter:hue-rotate(90deg)
+}
+
+
+
