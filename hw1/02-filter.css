@@ -1,13 +1,20 @@
-figure {
-
-    float: left;
-    padding:0px;
+h1{
+ display: none;
 }
 
+.Box{
+    /* display */
+    display: inline-block;
+    box-sizing: border-box;
+    /* box model */ 
+    margin: 1px;
+    padding: 1px;
+    color:black;
+}
 img{
-    max-height: 200px;
+    height: 200px;
     width: 200px;
-}
+} 
 
 .Box2
 {
@@ -38,7 +45,6 @@ img{
 .Box8
 {
     filter:invert(80%) brightness(50%) saturate(4);
-
 
 }
 
