@@ -1,9 +1,32 @@
+.h1 {
+  text-align: center;
+}
+
 /* Code for exercise 02-navbar */
+
 
 /* Code for exercise 03-flex */
 
+.flex-container
+{
+  display:flex;
+  height: 300px;
+  flex-flow: column wrap;
+  justify-content: flex-end;
+  /* align-items: flex-end; */
+}
+
+.flex-container .item5 { order: -1;}
+
+.flex-container .item8 { order: -2;}
+
 /* Code for exercise 04-grid */
+
 
 /* Code for exercise 05-calendar */
 
 /* Code for exercise 06-bootstrap-grid */
+
+.row:nth-child(1) {
+  background-color: var(--purple);
+}
