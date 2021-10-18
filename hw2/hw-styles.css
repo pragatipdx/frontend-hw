@@ -70,77 +70,125 @@ li {
 /* Code for exercise 04-grid */
 
 .grid-container
-{
-  display: grid;
+{ display: grid;
   gap: 4px;
 }
 
 @media (min-width: 414px) and (max-width: 767px)
 {
 .grid-container
-{
-  grid-template-columns: repeat(4,1fr);
-  grid-template-rows: repeat(4,1fr);
-   
+{ grid-template-columns: repeat(4,1fr);
+  grid-template-rows: repeat(4,1fr);   
 }
 
 .item3, .item7, .item8
-{
-  display: none;
-}
+{ display: none; }
+
 .item1, .item5
-{
-  grid-column: 1 / 3;
-}
+{ grid-column: 1 / 3; }
 
 .item5, .item6, .item9
-{
-  grid-row: 2 / 4;
-}
+{ grid-row: 2 / 4; }
 
 .item10
-{
-  grid-column: span 4;
-}
+{ grid-column: span 4; }
 }
 
 @media (min-width: 768px) 
 {
-
 .grid-container
-{
-  grid-template-columns: repeat(5,1fr);
-  grid-template-rows: repeat(5,1fr);
- 
+{ grid-template-columns: repeat(5,1fr);
+  grid-template-rows: repeat(5,1fr); 
 }
 
 .item1
-{
-  grid-column: span 2;
-}
+{ grid-column: span 2; }
  
 .item10
-{
-  grid-column: span 4;
-}
+{ grid-column: span 4; }
 
 .item3
-{
-  grid-column: 3 / 6;
+{ grid-column: 3 / 6;
   grid-row: 1 / 4;
 }
 
 .item5
-{
-  grid-column: 1 / 3 ;
+{ grid-column: 1 / 3 ;
   grid-row: 3 / 5;
 }
 }
 
 /* Code for exercise 05-calendar */
 
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px; 
+  max-width: 560px;
+  margin: auto;
+
+}
+
+header{
+  margin-top: 20px;
+  grid-column:1 / 8;
+  background-color: var(--black);
+  color: var(--white);
+  font-size: calc(8px + (21 - 16) * ((100vw - 300px) / (1600 - 300)));
+  min-height: 1vh;
+}
+
+.date, .weekday{
+ 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 1;
+  font-size: calc(16px + (21 - 16) * ((100vw - 300px) / (1600 - 300)));
+}
+
+.weekday{
+  background-color: var(--white);
+  font-weight:bold;
+}
+
+.date{
+  background-color: var(--gray4);
+  box-shadow: 0 0 2px rgba(204, 204, 204, 0.9);
+}
+
+.date:nth-child(1), .date:nth-child(2), .date:nth-child(3), .date:nth-child(35)
+{
+  background-color: white;
+}
+
+  
+
 /* Code for exercise 06-bootstrap-grid */
 
+.row{
+  height: 60px;
+}
 .row:nth-child(1) {
   background-color: var(--purple);
+}
+
+.row:nth-child(2) {
+  background-color: var(--navy);
+}
+
+.row:nth-child(3)
+{
+  background-color: var(--teal);
+}
+
+.row:nth-child(4)
+{
+  background-color: var(--green);
+}
+
+.row-item
+{
+border: 1px solid var(--white); 
+padding:10px;
 }
