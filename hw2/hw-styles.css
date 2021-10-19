@@ -166,29 +166,32 @@ header{
 
 /* Code for exercise 06-bootstrap-grid */
 
-.row{
-  height: 60px;
-}
-.row:nth-child(1) {
+.row:nth-child(1) > * {
   background-color: var(--purple);
 }
 
-.row:nth-child(2) {
+.row:nth-child(2) > * {
   background-color: var(--navy);
 }
 
-.row:nth-child(3)
+.row:nth-child(3) > *
 {
   background-color: var(--teal);
 }
 
-.row:nth-child(4)
+.row:nth-child(4) > *
+{
+  background-color: var(--green);
+}
+
+.row:nth-child(5) > *
 {
   background-color: var(--green);
 }
 
 .row-item
 {
+height: 60px;
 border: 1px solid var(--white); 
 padding:10px;
 }
