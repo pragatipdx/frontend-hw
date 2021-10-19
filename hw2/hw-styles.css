@@ -44,7 +44,7 @@ li a.active {
   color: white;
 }
 
-@media screen and (max-width: 780px) 
+@media screen and (max-width: 768px) 
 {
 li {
   float: none; 
