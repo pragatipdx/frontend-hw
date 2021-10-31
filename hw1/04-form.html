@@ -1,94 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-<title>Form Exercise</title>
-<link rel="stylesheet" href="../styles.css" />
-<link rel="stylesheet" href="04-form.css" />
-<head>
-<body>
-<main>
-  <!-- 04 - Form Exercise -->
-  <div class="container">
-    <form class="survey" id="survey">
-      <h1 class="heading">INTRO SURVEY</h1>
-      <!-- Name field -->
-      <div class="body">
-        <label for="name">Name <span>(required)</span></label>
-        <br>
-        <input type="text" class="name" id="name" name="name" required> 
-      </div>
-      <!-- Email field -->
-       <div class="body">
-        <label for="email">Email <span>(required)</span></label>
-        <br>
-        <input type="text" class="email" id="email" name="email" required>
-      </div>
-      <!-- Registration field -->
-      <div class="body">
-        <label for="registration">Registration Status:</label>
-        <br>
-        <select name="registration" id="registration">
-          <option value="">Choose an Option</option>
-          <option value="Waitlist"> Waitlist</option>
-        </select>
-      </div>
-      <!-- Class Section field -->
-      <div class="body">
-        <fieldset>
-          <legend>Class Section:</legend>
-          <input type="radio" class="radio" id="CS-410P" name="CS-410P"/>
-          <label for="CS-410P">CS 410P </label>
-
-          <input type="radio" class="radio" id="CS-510P" name="cs510P"/>
-          <label for="CS-510P">CS 510 </label>
-        </fieldset>
-      </div>
-      <!-- Course-Selector field -->
-      <div class="body">
-        <fieldset>
-          <legend>Have you taken any of the following courses? </legend>
-          <input type="checkbox"
-                 id="PL"
-                 name="Selector"
-                 class="checkbox" />
-          <label for="PL">Programing Languages</label>
-          <br>
-          <input type="checkbox"
-                 id="OS"
-                 name="operating_system" 
-                 class="checkbox"/>
-          <label for="OS">Operating Systems</label>
-          <br>
-          <input type="checkbox"
-                 id="Full Stack"
-                 name="Full_stack"
-                 class="checkbox" />
-          <label for="Full Stack">Full Stack Web Development</label>
-        </fieldset>
-      </div>
-
-      <!-- Anything else field -->
-      <div class="body">
-        <label for="Anything else">Anything else?</label>
-        <textarea id="Anything else"
-                  name="anything_area"
-                  rows="4"
-                  cols="50" required>
-        </textarea>
-      </div>
-
-      <!-- Submit -->
-      <div class="footer">
-        <button type="submit" form="survey" class="Submit" id="Submit" value="Submit">Submit</button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>JavaScript Form Exercise</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="../hw1/04-form.css" />
+    <script defer src="01-form.js"></script>
+  </head>
+  <body class="bg-dark text-dark">
+    <main>
+      <h1>Contact Form</h1>
+  
+        <!-- Step 1 - Insert your previous form here -->   
+         <form class="survey" id="survey">
+            <div class="container">
+            <h1 class="heading">INTRO SURVEY</h1>
+            <!-- Name field -->
+            <div class="body">
+              <label for="name">Name <span>(required)</span></label>
+              <br>
+              <input type="text" class="name" id="name" name="name" required> 
+            </div>
+            <!-- Email field -->
+             <div class="body">
+              <label for="email">Email <span>(required)</span></label>
+              <br>
+              <input type="text" class="email" id="email" name="email" required>
+            </div>
+            <!-- Registration field -->
+            <div class="body">
+              <label for="registration">Registration Status:</label>
+              <br>
+              <select name="registration" id="registration">
+                <option value="">Choose an Option</option>
+                <option value="Waitlist"> Waitlist</option>
+              </select>
+            </div>
+            <!-- Class Section field -->
+            <div class="body">
+              <fieldset>
+                <legend>Class Section:</legend>
+                <input type="radio" class="radio" id="section" value="CS-410P" name="section" />
+                <label for="CS-410P">CS 410P </label>
       
-        <!-- Reset -->
-        <button type="Reset" form="survey" class="reset" id="Reset" value="Reset">Reset</button>
-      </div>
-    </form>
-  </div>
-</main>
-</body>
-</head>
+                <input type="radio" class="radio" id="section" value="CS-510P" name="section"/>
+                <label for="CS-510P">CS 510 </label>
+              </fieldset>
+            </div>
+            <!-- Course-Selector field -->
+            <div class="body">
+              <fieldset>
+                <legend>Have you taken any of the following courses? </legend>
+                <input type="checkbox"
+                       id="PL"
+                       value="Programming Languages"
+                       name="selector"
+                       class="checkbox" />
+                <label for="PL">Programing Languages</label>
+                <br>
+                <input type="checkbox"
+                       id="OS"
+                       value="Operating System"
+                       name="selector" 
+                       class="checkbox"/>
+                <label for="OS">Operating Systems</label>
+                <br>
+                <input type="checkbox"
+                       id="full_Stack"
+                       value="Full Stack Web Development"
+                       name="selector"
+                       class="checkbox" />
+                <label for="Full Stack">Full Stack Web Development</label>
+              </fieldset>
+            </div>
+      
+            <!-- Anything else field -->
+            <div class="body">
+              <label for="Anything else">Anything else?</label>
+              <textarea id="feedback"
+                        name="feedback"
+                        rows="4"
+                        cols="50" required>
+              </textarea>
+            </div>
+      
+            <!-- Submit -->
+            <div class="footer">
+              <button type="submit" form="survey" class="Submit" id="Submit" value="Submit">Submit</button>
+            
+              <!-- Reset -->
+              <button type="Reset" form="survey" class="reset" id="Reset" value="Reset">Reset</button>
+            </div>
+          
+        </div>
+
+        <!-- Step 2 - Address any responsiveness and/or accessibility issues -->
+      </form>
+    </main>
+  </body>
 </html>
