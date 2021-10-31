@@ -7,14 +7,14 @@
  let _feedback = document.getElementById("feedback");
  const getArr=[]; 
 
-_form.addEventListener('submit', evt => {
+_form.addEventListener("submit", evt => {
 
     evt.preventDefault();
   
     console.group("====== Form Submission ======");
      // Input console log
-    console.log('Name: ' + _name.value);
-    console.log('Email: ' +_email.value);
+    console.log("Name: " + _name.value);
+    console.log("Email: " +_email.value);
 
     // Dropdown console log
     console.log("Class Registration: "+ document.getElementById("registration").value);
