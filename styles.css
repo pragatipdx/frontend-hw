@@ -44,3 +44,21 @@ form {
   height: 80px;
   margin: 1px;
 }
+
+h1 {
+  text-align: center;
+  font-weight: bold;
+  color:black;
+}
+#characters{
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: center;
+}
+#div_characters{
+  color:black;
+}
+#div_characters:hover {
+  background-color: rgba(1,77,78,1.00);
+  color: white;
+}
