@@ -83,10 +83,10 @@ let renderChart = async () => {
 renderChart();
 
 function validateNullFamily(family) {
-  if (family === "None" || family === "" || family === "Unknown" || family =="Free Folk") {
+  if (family === "None" || family === "" || family === "Unknown" || family ==="Free Folk") {
     family = "None";
   }
-  else if (family.indexOf("House") != 0) {
+  else if (family.indexOf("House") !== 0) {
     family = "House " + family;
   }
   if (family === "House Lanister") {

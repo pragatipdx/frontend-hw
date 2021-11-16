@@ -1,3 +1,33 @@
 .App {
   text-align: center;
 }
+
+.link{
+  color: white;
+  font-weight: bold;
+}
+
+.link:active, .link:hover{
+  text-decoration: underline;
+  color: black;
+  padding: 10px 10px;
+}
+
+@media (min-width:990px){
+div.houses-container{
+  max-width: 600px;
+}
+div.houses-container > canvas{
+  height:500px;
+  width:500px;
+}
+}
+
+nav-p{
+  font-weight: bold;
+}
+
+img.img-pic{
+  width:250px;
+  height:250px;
+}

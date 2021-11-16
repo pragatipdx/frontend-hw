@@ -1,9 +1,11 @@
-import './App.css';
+import "./App.css";
+import Nav from "./Components/Nav";
 
-function App() {
-  return (
+function App(){
+return (
     <div className='App'>
-      <h1>Exercise 03</h1>
+     <h1>Exercise 03 - React</h1>
+    <Nav />
     </div>
   );
 }

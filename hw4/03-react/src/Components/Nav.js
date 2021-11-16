@@ -8,9 +8,8 @@ import Houses from "./Houses";
 function Nav() {
   return (
     <Router>
-      <h1>Exercise 03</h1>
-      <nav class="navbar navbar-light bg-secondary justify-content-between">
-          <p class="navbar-brand">GOT React Website</p>
+      <nav className="navbar navbar-dark bg-secondary justify-content-between">
+          <p className="navbar-brand">GOT React Website</p>
           <div>
             <ul className="navbar">
               <li className="nav-link">
@@ -31,8 +30,7 @@ function Nav() {
                 </Link>
               </li>
             </ul>
-          </div>
-      
+          </div>    
         </nav>
        
 
